@@ -1,1 +1,43 @@
+JAVA is a programming language ,released in 1991
+its extension is ".java"
+editions of java software
+-> JSE[JAVA STANDARD EDITION]
+->JEE[JAVA ENTERPRISE EDITION]
+->JME[JAVA MACRO EDITION]
+JSE called as Core java
+JEE & JME are called as Advanced java
+features in JAVA:
+--------------------------
+  #simple
+  #object oriented
+  #portable
+  #platform independent
+  #robost
+  #architecture neutral
+  #dynamic
+  #distributed
+  #high performance
+  #multirated
+  #interpreted
+  #secure
+  
+  3 important terms in JAVA:
+  ------------------------------
+  JVM[JAVA VIRTUAL MACHINE]-> engine that executes your code; Translator , Manager, Safety
+  JRE[JAVA RUNTIME ENVIRONMENT]-> Executes Java bytecode natively
+  JDK[JAVA DEVELOPMENT KIT]-> comprehensive software toolkit used to write, compile, debug, and run Java applications.
 
+  TO COMPLIE JAVA PROGRAM :javac YourFileName.java
+  TO RUN JAVA PROGRAM : java YourFileName
+
+  INPUT TAKING POSSSIBILITIES:
+  --------------------------------------
+  1.best approach( by using Scanner class)
+  2.by usingBuffered Reader class
+  3.by using command line argument
+
+  Naming conventions:
+  1.Pascal ->used for classes, interfaces, and enums.( eg:MyClass)
+  2.camel ->
+        lower camel case:variables,methods
+        upper camel case(pascal case):classes,interfaces
