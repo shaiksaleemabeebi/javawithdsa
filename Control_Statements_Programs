@@ -1,0 +1,296 @@
+1. CHECK EVEN OR ODD :(IF-ELSE)
+-----------------------------------------
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        if(n % 2 == 0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+    }
+}
+
+
+2.LARGEST OF TWO NUMBERS :(IF-ELSE)
+------------------------------------------
+int a = 10, b = 20;
+
+if(a > b)
+    System.out.println(a);
+else
+    System.out.println(b);
+
+
+3.LARGEST OF THREE NUMBERS :(ELSE-IF LADDER)
+--------------------------------------------------
+int a = 10, b = 50, c = 30;
+
+if(a >= b && a >= c)
+    System.out.println(a);
+else if(b >= c)
+    System.out.println(b);
+else
+    System.out.println(c);
+
+
+ 4.CHECK POSITIVE,NEGATIVE OR ZERO :(ELSE-IF LADDER) 
+ -------------------------------------------------------
+ int n = -10;
+
+if(n > 0)
+    System.out.println("Positive");
+else if(n < 0)
+    System.out.println("Negative");
+else
+    System.out.println("Zero");
+
+
+5.LEAP YEAR :(IF-ELSE)
+-------------------------------------------------
+int year = 2024;
+
+if((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+    System.out.println("Leap Year");
+else
+    System.out.println("Not Leap Year");
+
+
+6.GRADE CALCULATOR :(ELSE-IF LADDER)
+---------------------------------------------------
+int marks = 85;
+
+if(marks >= 90)
+    System.out.println("A");
+else if(marks >= 80)
+    System.out.println("B");
+else if(marks >= 70)
+    System.out.println("C");
+else
+    System.out.println("Fail");
+
+
+7.VOWELS OR CONSONANTS :(IF-ELSE)
+--------------------------------------------
+char ch = 'a';
+
+if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+    System.out.println("Vowel");
+else
+    System.out.println("Consonant");
+
+
+8. CALCULATOR USING SWITCH :
+----------------------------------------------
+int a = 10, b = 5;
+char op = '+';
+
+switch(op)
+{
+    case '+':
+        System.out.println(a+b);
+        break;
+
+    case '-':
+        System.out.println(a-b);
+        break;
+
+    case '*':
+        System.out.println(a*b);
+        break;
+
+    case '/':
+        System.out.println(a/b);
+        break;
+
+    default:
+        System.out.println("Invalid");
+}
+
+
+9.PRINT 1 TO N :(FOR LOOP)
+------------------------------------------
+int n = 10;
+
+for(int i=1;i<=n;i++)
+{
+    System.out.print(i+" ");
+}
+
+
+10.SUM OF N NUMBERS :(FOR LOOP)
+-------------------------------------------
+int n = 5;
+int sum = 0;
+
+for(int i=1;i<=n;i++)
+{
+    sum += i;
+}
+
+System.out.println(sum);
+
+
+11.MULTIPLICATION TABLE :(FOR LOOP)
+----------------------------------------
+int n = 5;
+
+for(int i=1;i<=10;i++)
+{
+    System.out.println(n+" * "+i+" = "+(n*i));
+}
+
+
+12.FACTORIAL :(FOR LOOP)
+---------------------------------------
+int n = 5;
+int fact = 1;
+
+for(int i=1;i<=n;i++)
+{
+    fact *= i;
+}
+
+System.out.println(fact);
+
+
+13.REVERSE A NUMBER :(WHILE LOOP)
+----------------------------------------
+int n = 1234;
+int rev = 0;
+
+while(n > 0)
+{
+    int r = n % 10;
+    rev = rev * 10 + r;
+    n /= 10;
+}
+
+System.out.println(rev);
+
+
+14.PALINDROME NUMBER :(WHILE & IF-ELSE)
+----------------------------------------------
+int n = 121;
+int temp = n;
+int rev = 0;
+
+while(n > 0)
+{
+    int r = n % 10;
+    rev = rev * 10 + r;
+    n /= 10;
+}
+
+if(temp == rev)
+    System.out.println("Palindrome");
+else
+    System.out.println("Not Palindrome");
+
+
+15.ARMSTRONG NUMBER :(WHILE & IF-ELSE)
+----------------------------------------------
+int n = 153;
+int temp = n;
+int sum = 0;
+
+while(n > 0)
+{
+    int r = n % 10;
+    sum += r*r*r;
+    n /= 10;
+}
+
+if(sum == temp)
+    System.out.println("Armstrong");
+else
+    System.out.println("Not Armstrong");
+
+
+16.PRIME NUMBER :(FOR LOOP ,BREAK &IF-ELSE)
+---------------------------------------------
+int n = 13;
+boolean prime = true;
+
+for(int i=2;i<=n/2;i++)
+{
+    if(n%i==0)
+    {
+        prime=false;
+        break;
+    }
+}
+
+if(prime && n>1)
+    System.out.println("Prime");
+else
+    System.out.println("Not Prime");
+
+
+17.FIBONACCI SERIES :(FOR LOOP)
+---------------------------------------
+int a = 0, b = 1;
+
+for(int i=1;i<=10;i++)
+{
+    System.out.print(a+" ");
+
+    int c = a+b;
+    a = b;
+    b = c;
+}
+
+
+18.COUNT DIGITS :(WHILE LOOP)
+-----------------------------------------
+int n = 12345;
+int count = 0;
+
+while(n > 0)
+{
+    count++;
+    n /= 10;
+}
+
+System.out.println(count);
+
+
+19.SUM OF DIGITS :(WHILE LOOP)
+------------------------------------------
+int n = 1234;
+int sum = 0;
+
+while(n > 0)
+{
+    sum += n % 10;
+    n /= 10;
+}
+
+System.out.println(sum);
+
+
+20.STRONG NUMBER :(WHILE & IF-ELSE)
+----------------------------------------------
+int n = 145;
+int temp = n;
+int sum = 0;
+
+while(n > 0)
+{
+    int r = n % 10;
+
+    int fact = 1;
+    for(int i=1;i<=r;i++)
+        fact *= i;
+
+    sum += fact;
+    n /= 10;
+}
+
+if(sum == temp)
+    System.out.println("Strong Number");
+else
+    System.out.println("Not Strong Number");
