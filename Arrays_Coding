@@ -1,0 +1,282 @@
+1. Student Marks Analysis :
+-------------------------------------------
+
+int[] marks = {78, 85, 92, 67, 88};
+
+int sum = 0;
+int max = marks[0];
+int min = marks[0];
+
+for(int i = 0; i < marks.length; i++)
+{
+    sum += marks[i];
+
+    if(marks[i] > max)
+        max = marks[i];
+
+    if(marks[i] < min)
+        min = marks[i];
+}
+
+double avg = (double)sum / marks.length;
+
+System.out.println("Total = " + sum);
+System.out.println("Average = " + avg);
+System.out.println("Highest = " + max);
+System.out.println("Lowest = " + min);
+
+
+2. Employee Salary Analysis:
+----------------------------------------------
+
+int[] salary = {25000, 35000, 45000, 30000, 50000};
+
+int maxSalary = salary[0];
+
+for(int s : salary)
+{
+    if(s > maxSalary)
+        maxSalary = s;
+}
+
+System.out.println("Highest Salary = " + maxSalary);
+
+
+3. E-Commerce Order Revenue :
+-----------------------------------------------------
+
+int[] orders = {500, 1000, 700, 1200, 800};
+
+int revenue = 0;
+
+for(int order : orders)
+{
+    revenue += order;
+}
+
+System.out.println("Total Revenue = " + revenue);
+
+
+4. Attendance Management System :
+-------------------------------------------------------
+
+int[] attendance = {1,1,0,1,0,1,1};
+
+int present = 0;
+
+for(int status : attendance)
+{
+    if(status == 1)
+        present++;
+}
+
+System.out.println("Present Students = " + present);
+
+
+5. Online Exam Result Processing :
+---------------------------------------------------
+
+int[] marks = {35, 78, 22, 90, 40};
+
+int pass = 0;
+
+for(int mark : marks)
+{
+    if(mark >= 35)
+        pass++;
+}
+
+System.out.println("Passed Students = " + pass);
+
+
+6. Inventory Management :
+-----------------------------------------------
+
+int[] stock = {10, 0, 15, 0, 8};
+
+for(int i = 0; i < stock.length; i++)
+{
+    if(stock[i] == 0)
+        System.out.println("Product " + i + " Out of Stock");
+}
+
+
+7. Bank Transactions Analysis :
+-------------------------------------------------
+
+int[] transactions = {5000, -2000, 3000, -1000, 4000};
+
+int deposits = 0;
+
+for(int amount : transactions)
+{
+    if(amount > 0)
+        deposits += amount;
+}
+
+System.out.println("Total Deposits = " + deposits);
+
+
+8. Find Second Highest Salary :
+-------------------------------------------------------
+
+int[] arr = {20, 40, 80, 60, 90};
+
+int largest = Integer.MIN_VALUE;
+int second = Integer.MIN_VALUE;
+
+for(int num : arr)
+{
+    if(num > largest)
+    {
+        second = largest;
+        largest = num;
+    }
+    else if(num > second && num != largest)
+    {
+        second = num;
+    }
+}
+
+System.out.println(second);
+
+
+9. Product Search System :
+----------------------------------------------
+
+int[] productIds = {101,102,103,104,105};
+
+int search = 103;
+boolean found = false;
+
+for(int id : productIds)
+{
+    if(id == search)
+    {
+        found = true;
+        break;
+    }
+}
+
+System.out.println(found ? "Available" : "Not Available");
+
+
+10. Sales Performance Analysis :
+--------------------------------------------------------
+
+int[] sales = {10000,15000,18000,25000,22000};
+
+int max = sales[0];
+int month = 0;
+
+for(int i=1;i<sales.length;i++)
+{
+    if(sales[i] > max)
+    {
+        max = sales[i];
+        month = i;
+    }
+}
+
+System.out.println("Best Month = " + (month+1));
+
+
+11. Remove Duplicate Customer IDs : 
+-----------------------------------------------------
+Problem
+int[] arr = {1,2,2,3,4,4,5};
+
+for(int i=0;i<arr.length;i++)
+{
+    boolean duplicate = false;
+
+    for(int j=0;j<i;j++)
+    {
+        if(arr[i]==arr[j])
+        {
+            duplicate=true;
+            break;
+        }
+    }
+
+    if(!duplicate)
+        System.out.print(arr[i]+" ");
+}
+
+
+12. Find Missing Roll Number :
+--------------------------------------------------
+
+int[] arr = {1,2,3,5};
+
+int n = 5;
+
+int expected = n*(n+1)/2;
+
+int actual = 0;
+
+for(int num : arr)
+{
+    actual += num;
+}
+
+System.out.println(expected-actual);
+
+
+13. Move Failed Students to End :
+----------------------------------------------
+
+Pass marks = 35
+
+int[] marks = {80,20,60,15,90};
+
+int[] result = new int[marks.length];
+
+int index = 0;
+
+for(int mark : marks)
+{
+    if(mark >= 35)
+        result[index++] = mark;
+}
+
+for(int mark : marks)
+{
+    if(mark < 35)
+        result[index++] = mark;
+}
+
+
+14. Daily Temperature Analysis :
+--------------------------------------------.
+
+int[] temp = {30,32,35,33,31};
+
+int max = temp[0];
+
+for(int t : temp)
+{
+    if(t > max)
+        max = t;
+}
+
+System.out.println(max);
+
+
+15. Two Sum Problem :
+----------------------------------------
+
+int[] arr = {2,7,11,15};
+
+int target = 9;
+
+for(int i=0;i<arr.length;i++)
+{
+    for(int j=i+1;j<arr.length;j++)
+    {
+        if(arr[i]+arr[j]==target)
+        {
+            System.out.println(i+" "+j);
+        }
+    }
+}
