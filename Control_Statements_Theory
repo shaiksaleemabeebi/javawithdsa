@@ -1,0 +1,121 @@
+                                CONTROL STATEMENTS
+                        ==========================================
+
+1.DECISION MAKING STATEMENTS(IF,ELSE,IF ELSE......)
+
+2.LOOP CONTROL STATEMENTS(FOR,WHILE,DO WHILE,BREAK,CONTINUE)
+
+
+IF STATEMENT :
+----------------------
+if(condition)
+{
+    Block1;
+}
+Statement;
+
+
+IF-ELSE STATEMENT :
+--------------------------------
+if(condition)
+{
+    Block1;
+}
+else{
+    Block2;
+}
+Statement;
+
+
+NESTED IF STATEMENT :
+------------------------------
+if(condition1)
+{
+    if(condition2)
+    {
+        Block;
+    }
+}
+Statement;
+
+
+IF-ELSE-IF LADDER STATEMENT :
+--------------------------------------
+if(condition1)
+{
+    Block1;
+}
+else if(condition2)
+{
+    Block2;
+}
+else if(condition3)
+{
+    Block3;
+}
+else{
+    Block4;
+}
+Statement;
+
+
+SWITCH CASE :
+----------------------------
+switch(condition){
+
+    case1: Statement1;
+            break;
+    case2: Statement2;
+            break;
+            .
+            .
+            .
+            .
+    casen: Statementn;
+            break;
+   default: Statement;
+}
+
+
+TERNARY OPERATOR :
+------------------------------
+condition ? expression_if_true : expression_if_false;
+
+
+FOR LOOP :
+-------------------------------
+for(initilaize;condition;increment/decrement)
+{
+    Block;
+}
+
+
+WHILE LOOP :
+-------------------------------
+while(condition)
+{
+    Block;
+}
+
+
+DO-WHILE :
+---------------------------------
+do
+{
+    Block;
+}while(condition);
+
+
+DIFFERENCE BETWEEN WHILE AND DO-WHILE LOOP:
+-------------------------------------------------------------
+WHILE LOOP : A while loop checks the condition first and might not run at all if it's false. 
+
+DO-WHILE : do-while loop executes the code once before checking, guaranteeing it runs at least once.
+
+
+BREAK : break statement is used to exit a loop immediately and transfer control to the next statement after the loop.
+           It has two main usages: 
+           when encountered inside a loop, it terminates the loop instantly, and in a switch statement, it is used to exit a specific case
+
+CONTINUE :  used in any loop control structure to skip the current iteration and jump to the next one.
+            In a for loop, it immediately transfers control to the update statement, while in a while or do-while loop, it jumps directly to the Boolean expression for the next iteration.
