@@ -1,0 +1,28 @@
+                                        ARRAYS
+       -----------------------------------------------------------------------------------------------------------
+data structure called the array, which stores a fixed-size sequential collection of elements of the same data type. An array is used to store a collection of data, 
+but it is often more useful to think of an array as a collection of variables of the same type.  
+
+Declaring Array Variables :
+---------------------------------
+dataType[] arrayRefVar;   // preferred way.
+or
+dataType arrayRefVar[];  // works but not preferred way.
+
+
+Creating Arrays :
+----------------------------------------
+arrayRefVar = new dataType[arraySize];
+
+dataType[] arrayRefVar = new dataType[arraySize];
+
+dataType[] arrayRefVar = {value0, value1, ..., valuek};
+
+
+Declaration & Instantiation of MultiDimensional Array :
+--------------------------------------------------------------------------------
+int[][] myNumbers = new int[2][3];
+
+Direct Initialization:
+-------------------------------------------------
+int[][] myNumbers = { {1, 2, 3}, {4, 5, 6} };
